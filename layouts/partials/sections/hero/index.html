@@ -2,7 +2,7 @@
 {{- $hero := .Site.Language.Params.hero | default .Site.Params.hero -}}
 <section id="hero" class="py-5 align-middle">
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
-        <div class="row align-items-center flex-nowrap">
+        <div class="row align-items-start flex-nowrap">
             <div class="col-4 image {{ if .Site.Params.animate }}animate{{ end }} text-center">
                 <div class="hero-photo-wrapper">
                     <img src="{{ .Site.Params.hero.image }}"
