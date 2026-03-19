@@ -409,4 +409,4 @@ params:
     articleRecent: "Jan 2, 2006"
 
   customScripts: |
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/mmai-profile/css/custom.css">
