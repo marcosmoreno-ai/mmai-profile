@@ -1,0 +1,412 @@
+baseURL: "https://example.com"
+languageCode: "en-us"
+title: "Marcos Moreno"
+theme: hugo-profile
+
+# Multilingual configuration
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    contentDir: "content"
+    menu:
+      main:
+        - identifier: blog
+          name: Blog
+          title: Blog posts
+          url: /blogs
+          weight: 1
+  es:
+    languageName: "Español"
+    weight: 2
+    contentDir: "content/es"
+    menu:
+      main:
+        - identifier: blog
+          name: Blog
+          title: Publicaciones del blog
+          url: /es/blogs
+          weight: 1
+    params:
+      # Hero
+      hero:
+        enable: true
+        intro: "Hola, soy"
+        title: "Marcos Moreno Martínez"
+        subtitle: "AI Tech Lead"
+        content: "Ingeniero robótico con 6 años de experiencia en Computer Vision e Inteligencia Artificial. Entreno modelos, construyo datasets y lidero equipos de IA."
+        image: /images/cv-photo-2026.PNG
+        bottomImage:
+          enable: true
+        button:
+          enable: true
+          name: "Mi CV"
+          url: "#"
+          download: true
+          newPage: false
+        socialLinks:
+          fontAwesomeIcons:
+            - icon: fab fa-linkedin
+              url: https://www.linkedin.com/in/marcos-moreno-mart%C3%ADnez/
+            - icon: fab fa-github
+              url: https://github.com/marcosmoreno-ai
+
+      # About
+      about:
+        title: "Sobre Mí"
+        content: |-
+          Soy Marcos Moreno Martínez, AI Tech Lead con sede en España. Me gradué en Ingeniería Robótica por la Universidad de Alicante y desde entonces me he especializado en visión por computador, entrenamiento de modelos de deep learning y gestión de equipos de IA.
+
+          Llevo 6 años en la misma empresa, donde he pasado de construir pipelines de datos y entrenar CNNs con TensorFlow, a liderar un equipo multidisciplinar que abarca proyectos de visión artificial, agentes de IA y RPA. Me muevo bien entre la parte técnica y la coordinación de personas, aunque lo que realmente me apasiona sigue siendo resolver problemas difíciles con modelos bien entrenados.
+        skills:
+          title: "Tecnologías con las que trabajo habitualmente:"
+
+      # Experience
+      experience:
+        items:
+          - company: "Empresa Actual"
+            companyUrl: "https://example.com"
+            jobs:
+              - name: "AI Tech Lead"
+                date: "2023 - Presente"
+                info:
+                  content: Liderando equipos de visión artificial, agentes y RPA
+                content: |
+                  Responsable de coordinar varios equipos de IA en paralelo: un equipo de Computer Vision (etiquetadores, un doctor en matemáticas y un perfil junior) y un equipo de Agentes y RPA (senior fullstack, backend, frontend y especialista en agentes).
+
+                  - Gestión y formación de perfiles junior y senior.
+                  - Coordinación con CTO y Project Manager para comunicar avances y bloqueos.
+                  - Supervisión de proyectos de visión artificial en producción con más de 11 CNNs.
+                  - Dirección técnica de proyectos de agentes de IA y automatización RPA.
+
+              - name: "Computer Vision Engineer"
+                date: "2021 - 2023"
+                info:
+                  content: Responsable del equipo de visión por computador
+                content: |
+                  Tras la marcha de mi compañera al doctorado, asumí la responsabilidad total del equipo de visión. Incorporé y formé a nuevos perfiles (etiquetadores y un perfil junior de IA).
+
+                  - Formación de nuevos miembros del equipo desde cero.
+                  - Gestión de dataset: etiquetado, estructuración, pipelines de preprocesado.
+                  - Experimentación con distintas losses y técnicas de entrenamiento.
+
+              - name: "Junior AI Engineer"
+                date: "2019 - 2021"
+                info:
+                  content: Incorporación y primeros pasos en producción
+                content: |
+                  Me incorporé justo antes del despliegue en producción de una máquina con más de 11 CNNs. Los primeros meses estuvieron dedicados al dataset: búsqueda de herramientas, gestión de bases de datos, pipelines de preprocesado y etiquetado.
+
+                  - Construcción y mantenimiento del dataset desde cero.
+                  - Finetuning de modelos y experimentación con TensorFlow.
+                  - Primeros modelos propios con autonomía a los 2 años de entrada.
+
+      # Education
+      education:
+        items:
+          - title: "Grado en Ingeniería Robótica"
+            school:
+              name: "Universidad de Alicante"
+              url: "https://www.ua.es"
+            date: "2015 - 2019"
+            content: |-
+              TFG: Desarrollo de un sistema de detección de semáforos y pasos de peatones para asistir a personas con discapacidad visual.
+
+              - Entrenamiento de un modelo YOLO para detectar semáforos en rojo/verde y pasos de peatones.
+              - Servidor Flask para servir el modelo como API.
+              - App Android que recibía las predicciones e informaba al usuario mediante vibraciones.
+            featuredLink:
+              enable: false
+              name: "Ver proyecto"
+              url: "https://example.com"
+
+      # Achievements
+      achievements:
+        items:
+          - title: C1 de inglés
+            content: Certificado de nivel C1 de inglés obtenido de forma autodidacta tras el TFG.
+            image: /images/achievement.jpg
+          - title: TFG — Asistente visual para ciegos
+            content: Sistema de detección de semáforos con YOLO + Flask + Android para personas con discapacidad visual.
+            image: /images/achievement.jpg
+          - title: 6 años liderando IA en producción
+            content: Desde junior construyendo datasets hasta liderar equipos multidisciplinares de visión artificial y agentes.
+            image: /images/achievement.jpg
+
+      # Projects
+      projects:
+        items:
+          - title: Asistente Visual para Peatones Ciegos
+            content: Sistema de IA para asistir a personas con discapacidad visual en cruces de peatones. Detecta semáforos en rojo/verde y pasos de peatones usando YOLO, servido con Flask y consumido por una app Android que avisa mediante vibraciones.
+            image: /images/projects/profile.png
+            badges:
+              - "YOLO"
+              - "Flask"
+              - "Android"
+              - "Python"
+            links:
+              - icon: fab fa-github
+                url: https://github.com
+
+      # Contact
+      contact:
+        content: ¿Tienes alguna pregunta o simplemente quieres saludar? Mi bandeja de entrada está abierta.
+        btnName: Escríbeme
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  title: "Marcos Moreno"
+  description: "AI Tech Lead — Computer Vision & Deep Learning"
+  favicon: "/fav.png"
+
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  color:
+    textColor: "#1e293b"
+    secondaryTextColor: "#475569"
+    textLinkColor: "#185FA5"
+    backgroundColor: "#f8fafc"
+    secondaryBackgroundColor: "#e2e8f0"
+    primaryColor: "#185FA5"
+    secondaryColor: "#e2e8f0"
+
+    darkmode:
+      textColor: "#e2e8f0"
+      secondaryTextColor: "#94a3b8"
+      textLinkColor: "#00c6ff"
+      backgroundColor: "#0f172a"
+      secondaryBackgroundColor: "#1e293b"
+      primaryColor: "#378ADD"
+      secondaryColor: "#1e293b"
+
+  navbar:
+    align: ms-auto
+    brandName: "Marcos Moreno"
+    disableSearch: false
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, I'm"
+    title: "Marcos Moreno Martínez"
+    subtitle: "AI Tech Lead"
+    content: "Robotics engineer with 6 years of experience in Computer Vision and AI. I train models, build datasets, and lead multidisciplinary AI teams."
+    image: /images/cv-photo-2026.PNG
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://linkedin.com
+        - icon: fab fa-github
+          url: https://github.com
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    content: |-
+      I'm Marcos Moreno Martínez, an AI Tech Lead based in Spain. I hold a degree in Robotics Engineering from the University of Alicante, and I've spent the last 6 years specializing in computer vision, deep learning model training, and AI team management.
+
+      I joined my current company right before a major production deployment of a system with over 11 CNNs. Since then, I've grown from building data pipelines and fine-tuning models with TensorFlow, to leading a multidisciplinary team covering computer vision projects, AI agents, and RPA. I'm comfortable operating at the boundary between hands-on technical work and people management — and I hold a C1 level in English.
+    skills:
+      enable: true
+      title: "Technologies I work with:"
+      items:
+        - "Python"
+        - "TensorFlow"
+        - "YOLO"
+        - "OpenCV"
+        - "Computer Vision"
+        - "Flask"
+        - "Docker"
+        - "Linux"
+        - "Git"
+        - "SQL"
+
+  # Experience
+  experience:
+    enable: true
+    items:
+      - company: "Current Company"
+        companyUrl: "https://example.com"
+        jobs:
+          - name: "AI Tech Lead"
+            date: "2023 - Present"
+            info:
+              content: Leading computer vision, agents and RPA teams
+            content: |
+              Leading multiple parallel AI teams: a Computer Vision team (labelers, a PhD in mathematics and a junior AI profile) and an Agents & RPA team (senior fullstack, backend, frontend and an AI agent specialist).
+
+              - Team management and mentoring of both junior and senior profiles.
+              - Reporting to CTO and Project Manager, communicating progress and blockers.
+              - Technical oversight of production computer vision systems with 11+ CNNs.
+              - Technical direction of AI agent and RPA automation projects.
+
+          - name: "Computer Vision Engineer"
+            date: "2021 - 2023"
+            info:
+              content: Sole owner of the computer vision team
+            content: |
+              After my colleague left for a PhD, I took full ownership of the computer vision team. I recruited and trained new profiles from scratch.
+
+              - Onboarding and training of new team members (labelers and junior AI).
+              - Dataset management: labeling, structuring, preprocessing pipelines.
+              - Experimentation with custom loss functions and training strategies.
+
+          - name: "Junior AI Engineer"
+            date: "2019 - 2021"
+            info:
+              content: First steps in production AI
+            content: |
+              Joined the company just before a major production deployment of a system with 11+ CNNs. First months were fully dedicated to the dataset: tool research, database setup, preprocessing pipelines and labeling.
+
+              - Built and maintained the dataset infrastructure from scratch.
+              - Model fine-tuning and experimentation with TensorFlow.
+              - First fully autonomous models after 2 years at the company.
+
+  # Education
+  education:
+    enable: true
+    index: false
+    items:
+      - title: "Bachelor's Degree in Robotics Engineering"
+        school:
+          name: "University of Alicante"
+          url: "https://www.ua.es"
+        date: "2015 - 2019"
+        content: |-
+          Final Thesis: AI-powered visual assistant for blind pedestrians at crossings.
+
+          - Trained a YOLO model to detect red/green traffic lights and pedestrian crossings.
+          - Built a Flask server to serve the model as an API.
+          - Developed an Android app that consumed the predictions and alerted the user via vibration patterns.
+        featuredLink:
+          enable: false
+          name: "View project"
+          url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    items:
+      - title: C1 English Certificate
+        content: Self-taught English from scratch after graduation, reaching C1 level.
+        image: /images/achievement.jpg
+      - title: Final Thesis — Visual Assistant for Blind Pedestrians
+        content: End-to-end system using YOLO + Flask + Android to help visually impaired people navigate pedestrian crossings safely.
+        image: /images/achievement.jpg
+      - title: 6 Years Leading AI in Production
+        content: From junior building datasets to leading multidisciplinary teams in computer vision, AI agents and RPA.
+        image: /images/achievement.jpg
+
+  # Projects
+  projects:
+    enable: true
+    items:
+      - title: Visual Assistant for Blind Pedestrians
+        content: AI system to assist visually impaired people at pedestrian crossings. Detects traffic lights and crossings using YOLO, served via Flask, consumed by an Android app that alerts users through vibration patterns.
+        image: /images/projects/profile.png
+        badges:
+          - "YOLO"
+          - "Flask"
+          - "Android"
+          - "Python"
+        links:
+          - icon: fab fa-github
+            url: https://github.com
+
+  # Contact
+  contact:
+    enable: true
+    content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+    btnName: Mail me
+    btnLink: mailto:marcosmoreno.of@gmail.com
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com
+      linkedin: https://linkedin.com
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  customScripts: |
+    <link rel="stylesheet" href="/css/custom.css">
