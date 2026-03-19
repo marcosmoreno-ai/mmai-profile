@@ -38,7 +38,7 @@ languages:
         title: "Marcos Moreno Martínez"
         subtitle: "AI Tech Lead"
         content: "Ingeniero robótico con 6 años de experiencia en Computer Vision e Inteligencia Artificial. Entreno modelos, construyo datasets y lidero equipos de IA."
-        image: /images/cv-photo-2026.PNG
+        image: /images/ai-cv-image.jpg
         bottomImage:
           enable: true
         button:
@@ -235,7 +235,7 @@ params:
     title: "Marcos Moreno Martínez"
     subtitle: "AI Tech Lead"
     content: "Robotics engineer with 6 years of experience in Computer Vision and AI. I train models, build datasets, and lead multidisciplinary AI teams."
-    image: /images/cv-photo-2026.PNG
+    image: /images/ai-cv-image.jpg
     bottomImage:
       enable: true
     button:
@@ -279,7 +279,7 @@ params:
     enable: true
     items:
       - company: "Current Company"
-        companyUrl: "https://example.com"
+        companyUrl: "https://vraia.com/"
         jobs:
           - name: "AI Tech Lead"
             date: "2023 - Present"
