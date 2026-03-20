@@ -233,8 +233,8 @@ params:
     enable: true
     intro: "Hi, I'm"
     title: "Marcos Moreno Martínez"
-    subtitle: "AI Tech Lead"
-    content: "Robotics engineer with 6 years of experience in Computer Vision and AI. I train models, build datasets, and lead multidisciplinary AI teams."
+    subtitle: "AI Engineering Leader"
+    content: "I build and scale AI teams that actually ship. 6 years turning complex computer vision and AI systems into functioning, communicating, delivering teams."
     image: /images/ai-cv-image.jpg
     bottomImage:
       enable: true
