@@ -1,0 +1,49 @@
+{{ if hugo.IsMultilingual }}
+{{- $flagCodes := dict "en" "gb" "es" "es" -}}
+<li class="nav-item navbar-text dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
+        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{ with .Language }}
+            {{- $code := index $flagCodes .Lang | default .Lang -}}
+            <img src="https://flagcdn.com/w20/{{ $code }}.png"
+                 srcset="https://flagcdn.com/w40/{{ $code }}.png 2x"
+                 width="20" height="15"
+                 alt="{{ .LanguageName }}"
+                 style="border-radius:2px; vertical-align:middle;">
+            <span class="d-none d-md-inline ms-1">{{ .LanguageName }}</span>
+        {{ end }}
+    </a>
+    <div class="dropdown-menu shadow-lg rounded" aria-labelledby="languageDropdown">
+        {{- $translations := .AllTranslations -}}
+        {{- if eq (len $translations) 1 -}}
+            {{- range site.Home.AllTranslations -}}
+            {{- $code := index $flagCodes .Language.Lang | default .Language.Lang -}}
+            <a class="dropdown-item text-center nav-link{{ if eq .Language.Lang $.Language.Lang }} active{{ end }}"
+               href="{{ .RelPermalink }}"
+               title="{{ .Language.LanguageName }}">
+                <img src="https://flagcdn.com/w20/{{ $code }}.png"
+                     srcset="https://flagcdn.com/w40/{{ $code }}.png 2x"
+                     width="20" height="15"
+                     alt="{{ .Language.LanguageName }}"
+                     style="border-radius:2px; vertical-align:middle;">
+                <span class="ms-1">{{ .Language.LanguageName }}</span>
+            </a>
+            {{- end -}}
+        {{- else -}}
+            {{- range $translations -}}
+            {{- $code := index $flagCodes .Language.Lang | default .Language.Lang -}}
+            <a class="dropdown-item text-center nav-link{{ if eq .Language.Lang $.Language.Lang }} active{{ end }}"
+               href="{{ .RelPermalink }}"
+               title="{{ .Language.LanguageName }}">
+                <img src="https://flagcdn.com/w20/{{ $code }}.png"
+                     srcset="https://flagcdn.com/w40/{{ $code }}.png 2x"
+                     width="20" height="15"
+                     alt="{{ .Language.LanguageName }}"
+                     style="border-radius:2px; vertical-align:middle;">
+                <span class="ms-1">{{ .Language.LanguageName }}</span>
+            </a>
+            {{- end -}}
+        {{- end -}}
+    </div>
+</li>
+{{ end }}

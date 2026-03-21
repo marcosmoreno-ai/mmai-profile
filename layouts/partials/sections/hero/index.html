@@ -2,8 +2,8 @@
 {{- $hero := .Site.Language.Params.hero | default .Site.Params.hero -}}
 <section id="hero" class="py-5 align-middle">
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
-        <div class="row align-items-start flex-nowrap">
-            <div class="col-4 image {{ if .Site.Params.animate }}animate{{ end }} text-center">
+        <div class="row align-items-start">
+            <div class="col-12 col-md-4 image {{ if .Site.Params.animate }}animate{{ end }} text-center mb-4 mb-md-0">
                 <div class="hero-photo-wrapper">
                     <img src="{{ .Site.Params.hero.image }}"
                         class="img-fluid hero-photo mx-auto"
@@ -11,7 +11,7 @@
                     >
                 </div>
             </div>
-            <div class="col-8 content {{ if .Site.Params.animate }}animate{{ end }}" id="primary-font">
+            <div class="col-12 col-md-8 content {{ if .Site.Params.animate }}animate{{ end }}" id="primary-font">
                 <span class="subtitle">
                     {{ $hero.intro }}
                 </span>

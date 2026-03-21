@@ -1,6 +1,6 @@
 baseURL: "https://marcosmoreno-ai.github.io/"
 languageCode: "en-us"
-title: "Marcos Moreno"
+title: "Marcos Moreno Martínez"
 theme: hugo-profile
 
 # Multilingual configuration
@@ -12,38 +12,38 @@ languages:
     languageName: "English"
     weight: 1
     contentDir: "content"
-    menu:
-      main:
-        - identifier: blog
-          name: Blog
-          title: Blog posts
-          url: /blogs
-          weight: 1
+    # menu:
+    #   main:
+    #     - identifier: blog
+    #       name: Blog
+    #       title: Blog posts
+    #       url: /blogs
+    #       weight: 1
   es:
     languageName: "Español"
     weight: 2
     contentDir: "content/es"
-    menu:
-      main:
-        - identifier: blog
-          name: Blog
-          title: Publicaciones del blog
-          url: /es/blogs
-          weight: 1
+    # menu:
+    #   main:
+    #       - identifier: blog
+    #         name: Blog
+    #         title: Publicaciones del blog
+    #         url: /es/blogs
+    #         weight: 1
     params:
       # Hero
       hero:
         enable: true
         intro: "Hola, soy"
         title: "Marcos Moreno Martínez"
-        subtitle: "AI Tech Lead"
-        content: "Ingeniero robótico con 6 años de experiencia en Computer Vision e Inteligencia Artificial. Entreno modelos, construyo datasets y lidero equipos de IA."
-        image: /images/ai-cv-image.jpg
+        subtitle: "AI Engineering Leader"
+        content: "Ingeniero de ML con 6 años de experiencia en casos reales de producción, actualmente liderando dos equipos de IA. Especializado en Computer Vision, Deep Learning y en el liderazgo y la comunicación necesarios para que los proyectos lleguen a buen puerto."
+        image: /images/ai-cv-image-2.jpg
         bottomImage:
           enable: true
         button:
           enable: true
-          name: "Mi CV"
+          name: "Currículum"
           url: "#"
           download: true
           newPage: false
@@ -56,56 +56,82 @@ languages:
 
       # About
       about:
+        enable: true
         title: "Sobre Mí"
         content: |-
-          Soy Marcos Moreno Martínez, AI Tech Lead con sede en España. Me gradué en Ingeniería Robótica por la Universidad de Alicante y desde entonces me he especializado en visión por computador, entrenamiento de modelos de deep learning y gestión de equipos de IA.
+          Soy Marcos, AI Engineering Leader con sede en España.
 
-          Llevo 6 años en la misma empresa, donde he pasado de construir pipelines de datos y entrenar CNNs con TensorFlow, a liderar un equipo multidisciplinar que abarca proyectos de visión artificial, agentes de IA y RPA. Me muevo bien entre la parte técnica y la coordinación de personas, aunque lo que realmente me apasiona sigue siendo resolver problemas difíciles con modelos bien entrenados.
+          En los últimos 6 años en VRAIA he pasado de construir pipelines de datos a liderar un equipo de Machine Learning con más de 30 modelos de deep learning (CNNs y Vision Transformers) en producción. Más recientemente asumí la supervisión de un proyecto de AI Agents y RPA para ayudar a que saliera adelante.
+
+          Lo que he aprendido es que lo más difícil de la IA en producción no son los modelos — son las personas, la comunicación y los procesos. Llevo años moviéndome en esa frontera: con la solidez técnica para ganarme la confianza de mi equipo, y la visión organizativa para mantener las cosas en marcha cuando empiezan a atascarse.
+
+          C1 de inglés. Lidero con claridad. Hago crecer a las personas a mi alrededor.
         skills:
-          title: "Tecnologías con las que trabajo habitualmente:"
+          enable: true
+          title: "Tecnologías con las que trabajo:"
+          items:
+            - "Python"
+            - "TensorFlow"
+            - "PyTorch"
+            - "YOLO"
+            - "OpenCV"
+            - "MLflow"
+            - "LangChain"
+            - "LangGraph"
+            - "Docker"
+            - "Linux"
+            - "Git"
+            - "uv"
+            - "ruff"
 
       # Experience
       experience:
+        enable: true
         items:
           - company: "VRAIA"
-            companyUrl: "https://vraia.com"
+            companyUrl: "https://vraia.com/"
             jobs:
               - name: "AI Tech Lead"
                 date: "2023 - Presente"
                 info:
-                  content: Liderando equipos de visión artificial, agentes y RPA
+                  content: Liderando equipos de ML, Agentes y RPA
                 content: |
-                  Responsable de coordinar varios equipos de IA en paralelo: un equipo de Computer Vision (etiquetadores, un doctor en matemáticas y un perfil junior) y un equipo de Agentes y RPA (senior fullstack, backend, frontend y especialista en agentes).
+                  Liderando dos equipos de IA en paralelo: un equipo de Machine Learning centrado en Visión Artificial (2 etiquetadores, un matemático con doctorado, un ingeniero junior de ML) y un equipo de Agentes de IA y RPA (senior fullstack, backend, frontend y un especialista en agentes) — 8 personas con perfiles y disciplinas muy distintas.
 
-                  - Gestión y formación de perfiles junior y senior.
-                  - Coordinación con CTO y Project Manager para comunicar avances y bloqueos.
-                  - Supervisión de proyectos de visión artificial en producción con más de 11 CNNs.
-                  - Dirección técnica de proyectos de agentes de IA y automatización RPA.
+                  - Supervisión técnica de múltiples sistemas de visión artificial en producción con más de 30 modelos de deep learning (CNNs y Vision Transformers) desplegados en distintos proyectos.
+                  - Gestión de equipos y mentoría de perfiles junior y senior.
+                  - Puente entre ingenieros y dirección — reportes, defensa del equipo y resolución de bloqueos.
+                  - Introduje estándares de herramientas (uv, ruff, MLflow) que mejoraron la consistencia y redujeron la fricción dentro del equipo de ML.
+                  - Resolví bloqueos críticos de comunicación entre los equipos de IA e IT — malentendidos en la implementación de modelos y falta de alineación en versiones de dependencias clave (cuDNN, ONNX, TensorRT) que llevaban meses bloqueando los despliegues en producción.
 
-              - name: "Computer Vision Engineer"
+              - name: "ML Engineer"
                 date: "2021 - 2023"
                 info:
-                  content: Responsable del equipo de visión por computador
+                  content: Responsabilidad total de los proyectos de visión artificial
                 content: |
-                  Tras la marcha de mi compañera al doctorado, asumí la responsabilidad total del equipo de visión. Incorporé y formé a nuevos perfiles (etiquetadores y un perfil junior de IA).
+                  Asumí la responsabilidad total de los proyectos de visión artificial tras la reestructuración del equipo. Gestioné dos líneas de trabajo separadas — redes de segmentación y clasificación — simultáneamente.
 
-                  - Formación de nuevos miembros del equipo desde cero.
-                  - Gestión de dataset: etiquetado, estructuración, pipelines de preprocesado.
-                  - Experimentación con distintas losses y técnicas de entrenamiento.
+                  - Implementé MLflow para el seguimiento de modelos y mejoré los pipelines de pre/post-procesado.
+                  - Responsable del ciclo completo de ML: entrenamiento, experimentación, exportación ONNX y coordinación con IT para el despliegue en producción con TensorRT.
+                  - Refactoricé una base de código legacy de clasificación heredada en mal estado.
+                  - Incorporé y mentoricé a un nuevo miembro del equipo sin experiencia profesional previa en programación.
+                  - Formé a los etiquetadores del equipo — perfiles no técnicos — en metodología de dataset, workflow y nociones básicas de Python y SQL para que pudiesen generar scripts propios y lanzar queries, ganando autonomía en su trabajo diario.
 
-              - name: "Junior AI Engineer"
+              - name: "Junior ML Engineer"
                 date: "2019 - 2021"
                 info:
-                  content: Incorporación y primeros pasos en producción
+                  content: Primeros pasos en IA en producción
                 content: |
-                  Me incorporé justo antes del despliegue en producción de una máquina con más de 11 CNNs. Los primeros meses estuvieron dedicados al dataset: búsqueda de herramientas, gestión de bases de datos, pipelines de preprocesado y etiquetado.
+                  Me incorporé durante un despliegue crítico en producción. Antes de tener acceso al repositorio, construí proactivamente herramientas en Python para automatizar tareas repetitivas de etiquetado y una app prototipo para gestionar divisiones del dataset — que luego sirvió de base para una herramienta interna más robusta.
 
-                  - Construcción y mantenimiento del dataset desde cero.
-                  - Finetuning de modelos y experimentación con TensorFlow.
-                  - Primeros modelos propios con autonomía a los 2 años de entrada.
+                  - Herramientas de automatización por iniciativa propia que mejoraron el flujo de trabajo de etiquetado del equipo.
+                  - Una vez con acceso al repositorio, avancé rápidamente hacia el fine-tuning de modelos y la experimentación con TensorFlow.
+                  - Primera experiencia con pipelines de despliegue de modelos en producción (formato .pb, coordinación con el equipo de IT).
 
       # Education
       education:
+        enable: true
+        index: false
         items:
           - title: "Grado en Ingeniería Robótica"
             school:
@@ -113,11 +139,12 @@ languages:
               url: "https://www.ua.es"
             date: "2015 - 2019"
             content: |-
-              TFG: Desarrollo de un sistema de detección de semáforos y pasos de peatones para asistir a personas con discapacidad visual.
+              Trabajo Fin de Grado: Asistente visual con IA para peatones ciegos en cruces.
 
-              - Entrenamiento de un modelo YOLO para detectar semáforos en rojo/verde y pasos de peatones.
-              - Servidor Flask para servir el modelo como API.
-              - App Android que recibía las predicciones e informaba al usuario mediante vibraciones.
+              - Dataset propio de 1.010 imágenes etiquetadas (semáforo verde, semáforo rojo, paso de peatones) capturadas en varias ciudades españolas, de día y de noche.
+              - Entrenamiento de YOLOv3 sobre Darknet con GPU Nvidia Quadro P6000, alcanzando un 92% de recall y 75% IoU en el conjunto de test.
+              - Servidor Flask en Python para servir el modelo como API.
+              - App Android en Java que consumía las predicciones y alertaba al usuario mediante vibración y sonido.
             featuredLink:
               enable: false
               name: "Ver proyecto"
@@ -125,36 +152,50 @@ languages:
 
       # Achievements
       achievements:
+        enable: true
         items:
-          - title: C1 de inglés
-            content: Certificado de nivel C1 de inglés obtenido de forma autodidacta tras el TFG.
+          - title: 6 Años Creciendo en IA en Producción
+            content: De Junior ML Engineer a AI Tech Lead en la misma empresa. Desde construir pipelines de datos hasta liderar 8 personas en dos equipos de IA en paralelo.
             image: /images/achievement.jpg
-          - title: TFG — Asistente visual para ciegos
-            content: Sistema de detección de semáforos con YOLO + Flask + Android para personas con discapacidad visual.
+          - title: C1 de Inglés
+            content: Alcancé el nivel C1 tras la graduación mediante estudio autodidacta y preparación formal del examen. Mantenido activamente mediante práctica de conversación semanal.
             image: /images/achievement.jpg
-          - title: 6 años liderando IA en producción
-            content: Desde junior construyendo datasets hasta liderar equipos multidisciplinares de visión artificial y agentes.
+          - title: Deep Learning Specialization — DeepLearning.AI · Andrew Ng · 2021
+            content: Especialización de 5 cursos que cubre CNNs, RNNs, LSTMs, Transformers, ajuste de hiperparámetros y optimización.
+            image: /images/achievement.jpg
+          - title: GANs Specialization — DeepLearning.AI · 2022
+            content: Especialización de 3 cursos que cubre arquitectura GAN, estrategias de entrenamiento, generación de imágenes y traducción imagen a imagen.
+            image: /images/achievement.jpg
+          - title: LangChain Essentials — LangChain Academy · 2026
+            content: Curso oficial de LangChain que cubre conceptos clave e implementación en Python.
+            image: /images/achievement.jpg
+          - title: LangGraph Essentials — LangChain Academy · 2026
+            content: Curso oficial de LangGraph que cubre flujos de trabajo de agentes con estado en Python.
             image: /images/achievement.jpg
 
       # Projects
       projects:
+        enable: true
         items:
           - title: Asistente Visual para Peatones Ciegos
-            content: Sistema de IA para asistir a personas con discapacidad visual en cruces de peatones. Detecta semáforos en rojo/verde y pasos de peatones usando YOLO, servido con Flask y consumido por una app Android que avisa mediante vibraciones.
+            content: Sistema de IA de extremo a extremo para ayudar a personas con discapacidad visual a cruzar pasos de peatones de forma segura, bajo cualquier condición de iluminación. Construí un dataset personalizado de 1.010 imágenes, fine-tuné YOLOv3 alcanzando un 92% de recall y 75% IoU. Servido mediante API Flask, consumido por una app Android con retroalimentación háptica y de audio. Validado en pruebas reales en calle con un 100% de acierto.
             image: /images/projects/profile.png
             badges:
-              - "YOLO"
+              - "YOLOv3"
               - "Flask"
               - "Android"
               - "Python"
+              - "Darknet"
             links:
               - icon: fab fa-github
-                url: https://github.com
+                url: https://github.com/marcosmoreno-ai
 
       # Contact
       contact:
-        content: ¿Tienes alguna pregunta o simplemente quieres saludar? Mi bandeja de entrada está abierta.
+        enable: true
+        content: Mi bandeja de entrada siempre está abierta. Ya sea que tengas una pregunta o simplemente quieras saludar, ¡haré todo lo posible por responderte!
         btnName: Escríbeme
+        btnLink: mailto:marcosmoreno.of@gmail.com
 
 outputs:
   home:
@@ -214,8 +255,8 @@ params:
 
   navbar:
     align: ms-auto
-    brandName: "Marcos Moreno"
-    disableSearch: false
+    brandName: "Marcos Moreno Martínez"
+    disableSearch: true
     stickyNavBar:
       enable: true
       showOnScrollUp: true
@@ -235,7 +276,7 @@ params:
     title: "Marcos Moreno Martínez"
     subtitle: "AI Engineering Leader"
     content: "I build and scale AI teams that actually ship. 6 years turning complex computer vision and AI systems into functioning, communicating, delivering teams."
-    image: /images/ai-cv-image.jpg
+    image: /images/ai-cv-image-2.jpg
     bottomImage:
       enable: true
     button:
@@ -258,7 +299,7 @@ params:
     content: |-
       I'm Marcos, an AI Engineering Leader based in Spain.
 
-      Over the last 6 years at VRAIA I've grown from building dataset pipelines to leading a Machine Learning team with 30+ CNNs running in production. More recently I've taken on a supervisory role on an AI Agents and RPA project to help it ship on time.
+      Over the last 6 years at VRAIA I've grown from building dataset pipelines to leading a Machine Learning team with 30+ deep learning models (CNNs and Vision Transformers) running in production. More recently I've taken on a supervisory role on an AI Agents and RPA project to help it ship on time.
 
       What I've learned is that the hardest part of AI in production isn't the models — it's the people, the communication, and the process. I've spent years at that boundary: technically solid enough to earn my team's trust, and organizationally aware enough to keep things moving when they start to break down.
 
@@ -295,11 +336,11 @@ params:
             content: |
               Leading two parallel AI teams: a Machine Learning team focused on Computer Vision (2 labelers, a PhD mathematician, a junior ML engineer) and an AI Agents & RPA team (senior fullstack, backend, frontend and an agent specialist) — 8 people across very different profiles and disciplines.
 
-              - Technical oversight of a production computer vision system with 30+ CNNs.
+              - Technical oversight of multiple production computer vision systems with 30+ deep learning models (CNNs and Vision Transformers) deployed across different projects.
               - Team management and mentoring across junior and senior profiles.
               - Bridge between engineers and upper management — reporting, protecting the team, unblocking delivery.
-              - Introduced tooling standards (uv, ruff, MLflow) that improved consistency and reduced friction across both teams.
-              - Resolved critical communication breakdowns between the AI and IT teams — misalignments that had been blocking production deployments for months.
+              - Introduced tooling standards (uv, ruff, MLflow) that improved consistency and reduced friction within the ML team.
+              - Resolved critical communication breakdowns between the AI and IT teams — misalignments in model deployment and dependency versioning (cuDNN, ONNX, TensorRT) that had been blocking production deployments for months.
 
           - name: "ML Engineer"
             date: "2021 - 2023"
@@ -312,6 +353,7 @@ params:
               - Owned the full ML lifecycle: training, experimentation, ONNX export and coordination with IT for TensorRT production deployment.
               - Refactored a legacy classification codebase inherited in poor condition.
               - Onboarded and mentored a new team member with no prior professional programming experience.
+              - Trained non-technical labelers in dataset methodology, workflow, and basic Python and SQL — enabling them to write their own scripts and run queries autonomously.
 
           - name: "Junior ML Engineer"
             date: "2019 - 2021"
@@ -337,9 +379,10 @@ params:
         content: |-
           Final Thesis: AI-powered visual assistant for blind pedestrians at crossings.
 
-          - Trained a YOLO model to detect red/green traffic lights and pedestrian crossings.
-          - Built a Flask server to serve the model as an API.
-          - Developed an Android app that consumed the predictions and alerted the user via vibration patterns.
+          - Custom dataset of 1,010 labeled images (green light, red light, pedestrian crossing) captured across multiple Spanish cities, day and night.
+          - Fine-tuned YOLOv3 on Darknet using an Nvidia Quadro P6000 GPU, reaching 92% recall and 75% IoU on the test set.
+          - Flask server in Python to serve the model as an API.
+          - Android app in Java consuming predictions and alerting the user via haptic and audio feedback.
         featuredLink:
           enable: false
           name: "View project"
@@ -397,7 +440,7 @@ params:
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: true
+      enable: false
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com/marcosmoreno-ai
